@@ -1,35 +1,33 @@
 import Image from "next/image";
 import {Button} from "@/components/ui/button";
+import Link from "next/link";
 
 
 export default function Home() {
   return (
     <div>
-      <div>
-        <header id="hero-container">
-          <div id="hero-content" className="relative top-32 inset-0 flex flex-col items-center justify-center text-white">
-            <h1 className="relative z-20 text-3xl font-serif tracking-widest uppercase">Gil Granado</h1>
+      <div className="overflow-hidden">
+        <header id="hero-container" className="bg-[url('/background.jpg')] bg-cover p-65">
+          <div id="hero-content" className="drop-shadow-[1px_1px_0px_rgba(0,0,0,1)] drop-shadow-[2px_2px_0px_rgba(0,0,0,1)] relative top-32 flex flex-col items-center justify-center text-white">
+            <h1 className="absolute text-6xl border-2 contents font-serif tracking-widest uppercase">Gil Granado</h1>
             <p className="mt-4 tracking-[0.4em] uppercase text-xs opacity-90">Haute Couture</p>
           </div>
-          <Image
-              src="/background.jpg"
-              alt="Background"
-              width={800}
-              height={200}
-              priority
-              className="absolute top-0 left-0 z-10"
-          />
-        <div className="relative flex flex-row z-15">
-          <Button>
-            Log-in
-          </Button>
-          <Button>
-            Sign-up
-          </Button>
+
+        <div className="flex flex-row">
+
+          <div className="absolute flex w-fit flex-row top-5 right-5 gap-x-5">
+            <Button>
+              Log-in
+            </Button>
+            <Button>
+              Sign-up
+            </Button>
+          </div>
         </div>
+
         </header>
       </div>
-      <div className="flex flex-row bg-[#00170f] border-2 ">
+      <div className="flex flex-row bg-[#00170f]">
         <div className="flex flex-column">
           <div className="text-[#E5DED0]">WORKS AND DESIGN</div>
           <div className="text-[#E5DED0]">A masterpiece of Arabian-inspired luxury, this gown flows like liquid fire in a deep, commanding red.
@@ -38,6 +36,13 @@ export default function Home() {
           <Button>
             View More
           </Button>
+        </div>
+        <div id="testLang">
+          <Link href="/appointment-page">
+            <Button>
+              BOOK NOW
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
