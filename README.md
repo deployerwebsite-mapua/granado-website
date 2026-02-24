@@ -39,14 +39,14 @@ The website project uses various tools and framework in designing the entire web
 
 Tailwind CSS is primarily used for styling through a utility-class basis, where instead of the usual:
 
-p {
+`p {
   color: red;
   font-size: 20px;
-}
+}`
 
 You can style an HTML element via:
 
-<p class="text-red-500 text-[20px]"></p>
+`<p class="text-red-500 text-[20px]"></p>`
 
 This is because tailwind prioritizes rapid development
 
