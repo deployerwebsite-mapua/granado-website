@@ -34,7 +34,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The website project uses various tools and framework in designing the entire website, these are:
 
 **1** Tailwind CSS - CSS Framework
+
 **2** Shadcn UI - Collection of Reusable Tailwind CSS styles
+
 **3** React - Front-end Framework
 
 Tailwind CSS is primarily used for styling through a utility-class basis, where instead of the usual:
