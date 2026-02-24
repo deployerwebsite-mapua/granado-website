@@ -29,8 +29,36 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+**FOR CSS Styling**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The website project uses various tools and framework in designing the entire website, these are:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**1** Tailwind CSS - CSS Framework
+**2** Shadcn UI - Collection of Reusable Tailwind CSS styles
+**3** React - Front-end Framework
+
+Tailwind CSS is primarily used for styling through a utility-class basis, where instead of the usual:
+
+p {
+  color: red;
+  font-size: 20px;
+}
+
+You can style an HTML element via:
+
+<p class="text-red-500 text-[20px]"></p>
+
+This is because tailwind prioritizes rapid development
+
+Shadcn UI provides even a step further, if you had to type the utility classes manually, you could just import a pre-built tailwind css style:
+
+You first install the node package for button: npx shadcn-ui add button
+Then you import: import { Button } from "@/components/ui/button";
+And you use: <Button> Click Me </Button>
+
+And above all of these, lies React:
+If Tailwind is the paint and Shadcn is the furniture, React is the brain that makes them move. It ties everything together by using State (variables that the website "watches").
+
+In a normal website, if you click a button, nothing happens unless you write a script to find that specific button and force it to change.
+
+
